@@ -7,6 +7,7 @@
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300&display=swap');
 @import './style/reset.css';
+@import './style/mobile.scss';
 
 #app {
   -webkit-font-smoothing: antialiased;

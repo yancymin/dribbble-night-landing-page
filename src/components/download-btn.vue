@@ -84,15 +84,17 @@ export default {
 <style lang="scss" scoped>
 .download-btn {
   position: relative;
-  display: inline;
-  padding: 40px;
+  display: inline-block;
+  max-width: 400px;
+  padding: 20px 32px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgba(234, 76, 137, 0.02);
+    background-color: rgba(234, 76, 137, 0.08);
     border-color: transparent;
     box-shadow: 0 0 0 2px inset #ea4c89;
   }
