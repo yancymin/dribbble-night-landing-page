@@ -116,7 +116,7 @@
     </div>
     <footer>
       <span class="info">
-        Code & Designed by
+        Coded & Designed by
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
@@ -163,7 +163,7 @@ export default {
 
     i {
       width: 1px;
-      height: 80%;
+      height: 100%;
       background-color: rgba(255, 255, 255, 0.2);
     }
   }

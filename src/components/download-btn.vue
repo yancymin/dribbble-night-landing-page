@@ -87,7 +87,7 @@ export default {
   display: inline-block;
   max-width: 400px;
   padding: 20px 32px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   margin-bottom: 32px;
   border-radius: 8px;
   cursor: pointer;
