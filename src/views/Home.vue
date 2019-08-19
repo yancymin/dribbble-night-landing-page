@@ -179,6 +179,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 80px;
+        
 
         .dark,
         .light {
