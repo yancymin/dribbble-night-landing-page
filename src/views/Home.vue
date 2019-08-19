@@ -112,7 +112,7 @@
     </div>
     <div class="download">
       <downloadBtn />
-      <a class="crx-file">Get .crx Chrome Extension file.</a>
+      <a class="crx-file" href='../assets/dribbble-night_1.0.crx' download="dribbble-night_1.0.crx">Get .crx Chrome Extension file.</a>
     </div>
     <footer>
       <span class="info">
@@ -128,12 +128,7 @@ import downloadBtn from "../components/download-btn.vue";
 
 export default {
   name: "home",
-  components: { downloadBtn },
-  data() {
-    return {
-      img: require("../assets/img-dark.jpg")
-    };
-  }
+  components: { downloadBtn }
 };
 </script>
 
