@@ -153,6 +153,7 @@ export default {
         font-weight: 300;
         font-size: 18px;
         cursor: pointer;
+        font-family: "Montserrat", sans-serif;
 
         &:hover {
           text-decoration: underline;
@@ -168,11 +169,41 @@ export default {
       align-items: center;
 
       .switch-btn {
+        width: 200px;
+        height: 60px;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        border-radius: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
 
+        .dark,
+        .light {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60%;
+          height: 100%;
+          border-radius: 30px;
+          color: rgba(255, 255, 255, 0.4);
+          cursor: pointer;
+        }
+
+        .dark {
+          background-color: white;
+          color: black;
+        }
       }
       .switch-img {
+        width: 100vw;
         max-width: 1200px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 100px hsl(0, 0%, 5%);
       }
     }
   }
@@ -182,6 +213,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin-top: 160px;
+    font-family: "Montserrat", sans-serif;
 
     .download-btn {
       margin-bottom: 160px;

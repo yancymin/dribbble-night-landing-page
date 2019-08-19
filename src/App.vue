@@ -6,7 +6,7 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300&display=swap');
-
+@import './style/reset.css';
 
 #app {
   -webkit-font-smoothing: antialiased;
@@ -17,6 +17,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   width: 100vw;
   background-color: #1A1A1A;
   overflow-x: hidden;
@@ -34,4 +35,5 @@ body {
   display: none;
   opacity: 0;
 }
+
 </style>
