@@ -112,7 +112,7 @@
     </div>
     <div class="download">
       <downloadBtn />
-      <a class="crx-file" href='dribbble-night_1.0.crx' download="dribbble-night_1.0.crx">Get .crx Chrome Extension file.</a>
+      <a class="crx-file" href='dribbble-night_1.2.crx' download="dribbble-night_1.0.crx">Get .crx Chrome Extension file.</a>
     </div>
     <footer>
       <span class="info">
