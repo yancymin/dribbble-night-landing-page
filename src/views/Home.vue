@@ -112,10 +112,26 @@
     </div>
     <div class="download">
       <downloadBtn />
-      <a class="crx-file" href='dribbble-night.crx' download="dribbble-night_1.0.crx">Get .crx Chrome Extension file.</a>
+      <a
+        class="crx-file"
+        href="dribbble-night.crx"
+        download="dribbble-night_1.0.crx"
+      >Get .crx Chrome Extension file.</a>
     </div>
     <footer>
-      <a class="pHunt" href="https://www.producthunt.com/posts/dribbble-night?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dribbble-night" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=164973&theme=dark" alt="Dribbble Night - Dark mode for Dribbble 🏀💨🌒 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+      <a
+        class="pHunt"
+        href="https://www.producthunt.com/posts/dribbble-night?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dribbble-night"
+        target="_blank"
+      >
+        <img
+          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=164973&theme=dark"
+          alt="Dribbble Night - Dark mode for Dribbble 🏀💨🌒 | Product Hunt Embed"
+          style="width: 250px; height: 54px;"
+          width="250px"
+          height="54px"
+        />
+      </a>
       <span class="info">
         Coded & Designed by
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
@@ -220,5 +236,4 @@ export default {
     }
   }
 }
-
 </style>
