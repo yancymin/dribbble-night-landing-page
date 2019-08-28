@@ -133,6 +133,9 @@
         />
       </a>
       <span class="info">
+        <a href="https://github.com/yancymin/dribbble-night-chrome-extension">
+          <i class="fab fa-github"></i>
+        </a>
         Coded & Designed by
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
@@ -213,10 +216,20 @@ export default {
     }
 
     .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
       color: rgba(255, 255, 255, 0.5);
       margin-bottom: 32px;
+
+      i {
+        font-size: 18px;
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
 
       a {
         color: rgba(255, 255, 255, 0.5);
@@ -225,6 +238,10 @@ export default {
         &:hover {
           color: white;
           text-decoration: underline;
+        }
+
+        &:last-child {
+          margin-left: 4px;
         }
       }
     }
