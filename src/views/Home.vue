@@ -111,7 +111,10 @@
       </div>
     </div>
     <div class="download">
-      <downloadBtn />
+      <div class="download-wrap">
+        <downloadBtn />
+        <i></i>
+      </div>
       <a
         class="crx-file"
         href="dribbble-night.crx"
@@ -183,7 +186,7 @@ export default {
 
     i {
       width: 1px;
-      height: 100%;
+      height: 173px;
       background-color: rgba(255, 255, 255, 0.2);
     }
   }
@@ -191,6 +194,34 @@ export default {
   .download {
     display: inline-flex;
     flex-direction: column;
+    position: relative;
+    top: 6%;
+
+    .download-wrap {
+      position: relative;
+
+      .download-btn:hover {
+        & + i {
+          opacity: 1;
+          box-shadow: 0 30px 80px hsla(337, 79%, 61%, 0.6);
+          transform: translateY(-14px) scale(0.8);
+        }
+      }
+      i {
+        z-index: -99;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 90px;
+        top: -120px;
+        position: relative;
+        transform: scale(0.7);
+        background-color: transparent;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0;
+        box-shadow: 0 40px 88px transparent;
+      }
+    }
 
     .crx-file {
       display: inline;
@@ -199,6 +230,8 @@ export default {
       cursor: pointer;
       font-family: "Montserrat", sans-serif;
       transition: all 0.3s ease;
+      position: relative;
+      top: -90px;
 
       &:hover {
         text-decoration: underline;
@@ -214,6 +247,9 @@ export default {
     padding-top: 20px;
     padding-bottom: 20px;
 
+    img {
+      opacity: 0.7;
+    }
 
     .info {
       display: flex;

@@ -83,24 +83,35 @@ export default {
 
 <style lang="scss" scoped>
 .download-btn {
+  z-index: 2;
   position: relative;
   display: inline-block;
   max-width: 400px;
   padding: 20px 32px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px  rgba(255, 255, 255, 0.4);
   margin-bottom: 32px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0.03s;
+
 
   &:hover {
-    background-color: rgba(234, 76, 137, 0.08);
-    border-color: transparent;
-    box-shadow: 0 0 0 2px inset #ea4c89;
+    background-color: #211B1D;
+    border: none;
+    transform: scaleY(1.1) scaleX(0.9) translateY(-25px);
+    box-shadow: 0 0 0 2px  #ea4c89, 0 4px 10px hsla(337, 100%, 80%, 0.231);
+
+    svg {
+      transform: scaleY(0.845) scale(0.9);
+    }
+
+  
   }
 
   svg {
     max-width: 90%;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 </style>

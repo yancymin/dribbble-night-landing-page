@@ -61,6 +61,7 @@
 
 <style lang="scss" scoped>
 .loading {
+    z-index: 99999;
   position: fixed;
   top: 0;
   left: 0;
