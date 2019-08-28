@@ -207,13 +207,13 @@ export default {
   }
 
   footer {
+    width: 100%;
     display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    .pHunt {
-      margin-bottom: 24px;
-    }
 
     .info {
       display: flex;
@@ -222,7 +222,6 @@ export default {
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
       color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 32px;
 
       i {
         display: block;
