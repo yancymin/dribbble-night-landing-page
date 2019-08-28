@@ -225,10 +225,17 @@ export default {
       margin-bottom: 32px;
 
       i {
-        font-size: 18px;
-        padding-right: 8px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        padding-right: 14px;
         margin-right: 8px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
+        background-image: url("../assets/github-brands.svg");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.3s ease;
       }
 
       a {
