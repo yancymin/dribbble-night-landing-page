@@ -1,13 +1,25 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
+    <loading />
   </div>
 </template>
 
+<script>
+import loading from '@/components/loading.vue'
+
+export default {
+  name: "app",
+  components: {
+    loading
+  }
+};
+</script>
+
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300&display=swap');
-@import './style/reset.css';
-@import './style/mobile.scss';
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300&display=swap");
+@import "./style/reset.css";
+@import "./style/mobile.scss";
 
 #app {
   -webkit-font-smoothing: antialiased;
@@ -17,10 +29,10 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   width: 100vw;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -30,11 +42,9 @@ body {
   color: white;
 }
 
-
 *::-webkit-scrollbar {
-  width:0;
+  width: 0;
   display: none;
   opacity: 0;
 }
-
 </style>
