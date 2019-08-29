@@ -118,7 +118,7 @@
       <a
         class="crx-file"
         href="dribbble-night.crx"
-        download="dribbble-night_1.0.crx"
+        download="dribbble-night.crx"
       >Get .crx Chrome Extension file.</a>
     </div>
     <footer>
