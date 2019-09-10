@@ -137,21 +137,23 @@
       </a>
       <span class="info">
         <a href="https://github.com/yancymin/dribbble-night-chrome-extension">
-          <i class="fab fa-github"></i>
+          <i></i>
         </a>
         Coded & Designed by
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
+    <popup/>
   </div>
 </template>
 
 <script>
 import downloadBtn from "../components/download-btn.vue";
+import popup from "../components/Popup.vue";
 
 export default {
   name: "home",
-  components: { downloadBtn }
+  components: { downloadBtn, popup }
 };
 </script>
 
