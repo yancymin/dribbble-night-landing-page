@@ -116,6 +116,7 @@
         <i></i>
       </div>
       <a
+        :v-on:click="showPopup()"
         class="crx-file"
         href="dribbble-night.crx"
         download="dribbble-night.crx"
@@ -143,7 +144,7 @@
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
-    <popup/>
+    <popup />
   </div>
 </template>
 
@@ -153,7 +154,12 @@ import popup from "../components/Popup.vue";
 
 export default {
   name: "home",
-  components: { downloadBtn, popup }
+  components: { downloadBtn, popup },
+  methods: {
+    showPopup() {
+      this.showPopup = true;
+    }
+  }
 };
 </script>
 
@@ -186,7 +192,7 @@ export default {
       max-width: 100%;
     }
 
-    i {
+    > i {
       width: 1px;
       height: 173px;
       background-color: rgba(255, 255, 255, 0.2);
