@@ -132,6 +132,8 @@ export default {
       filter: contrast(0.87);
       border: 1px solid #333;
       border-radius: 6px;
+      transform: scale(0.8);
+      transform-origin: right;
     }
 
     > img {
