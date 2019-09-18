@@ -1,6 +1,6 @@
 <template>
-  <div class="popup" :class="{closePopup:'closePopup',showPopup: 'showPopup'}">
-    <i class="fas fa-times" v-on:click="close()"></i>
+  <div class="popup" v-show="isShowPopup">
+    <i class="fas fa-times" @click="close()"></i>
     <div class="popup_container">
       <img src="../assets/popup_logo.png" alt />
       <h3>Thanks for downloading Dribbble Night!</h3>
@@ -37,15 +37,15 @@ import sharer from "sharer.js";
 
 export default {
   name: "popup",
+  props: ['isShowPopup'],
   methods: {
     close() {
-      this.closePopup = true;
+      this.$emit("showPopup", false);
     }
   },
   data() {
     return {
       showPopup: false,
-      closePopup: false,
       share: {
         twitter: ["twitter", "fab fa-twitter"],
         facebook: ["facebook", "fab fa-facebook"],

@@ -112,11 +112,11 @@
     </div>
     <div class="download">
       <div class="download-wrap">
-        <downloadBtn />
+        <downloadBtn @click.native="showPopup()"/>
         <i></i>
       </div>
       <a
-        :v-on:click="showPopup()"
+        @click="showPopup()"
         class="crx-file"
         href="dribbble-night.crx"
         download="dribbble-night.crx"
@@ -144,7 +144,7 @@
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
-    <popup />
+    <popup @showPopup="showPopup" :isShowPopup='isShowPopup'/>
   </div>
 </template>
 
@@ -155,9 +155,15 @@ import popup from "../components/Popup.vue";
 export default {
   name: "home",
   components: { downloadBtn, popup },
+  data() {
+    return {
+      isShowPopup: false
+    };
+  },
   methods: {
     showPopup() {
-      this.showPopup = true;
+      this.isShowPopup = !this.isShowPopup;
+      console.log(this.isShowPopup)
     }
   }
 };
