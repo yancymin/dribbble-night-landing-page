@@ -179,6 +179,7 @@ export default {
    h3 {
      font-size: 24px ;
      margin-bottom: 40px;
+     line-height: 28px;
    }
  }
 }

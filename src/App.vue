@@ -46,5 +46,6 @@ body {
   width: 0;
   display: none;
   opacity: 0;
+  visibility: hidden;
 }
 </style>
