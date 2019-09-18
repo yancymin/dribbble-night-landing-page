@@ -112,10 +112,11 @@
     </div>
     <div class="download">
       <div class="download-wrap">
-        <downloadBtn />
+        <downloadBtn @click.native="showPopup()"/>
         <i></i>
       </div>
       <a
+        @click="showPopup()"
         class="crx-file"
         href="dribbble-night.crx"
         download="dribbble-night.crx"
@@ -137,21 +138,34 @@
       </a>
       <span class="info">
         <a href="https://github.com/yancymin/dribbble-night-chrome-extension">
-          <i class="fab fa-github"></i>
+          <i></i>
         </a>
         Coded & Designed by
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
+    <popup @showPopup="showPopup" :isShowPopup='isShowPopup'/>
   </div>
 </template>
 
 <script>
 import downloadBtn from "../components/download-btn.vue";
+import popup from "../components/Popup.vue";
 
 export default {
   name: "home",
-  components: { downloadBtn }
+  components: { downloadBtn, popup },
+  data() {
+    return {
+      isShowPopup: false
+    };
+  },
+  methods: {
+    showPopup() {
+      this.isShowPopup = !this.isShowPopup;
+      console.log(this.isShowPopup)
+    }
+  }
 };
 </script>
 
@@ -184,7 +198,7 @@ export default {
       max-width: 100%;
     }
 
-    i {
+    > i {
       width: 1px;
       height: 173px;
       background-color: rgba(255, 255, 255, 0.2);
