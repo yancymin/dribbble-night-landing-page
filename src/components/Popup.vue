@@ -1,7 +1,7 @@
 <template>
   <div class="popup" v-show="isShowPopup">
     <i class="fas fa-times" @click="close()"></i>
-    <div class="popup_container">
+    <div class="popup_container" id="popup_container">
       <img src="../assets/popup_logo.png" alt />
       <h3>Thanks for downloading Dribbble Night!</h3>
       <a href="https://www.buymeacoffee.com/2BJnfEK" target="_blank" class="coffee">
@@ -62,16 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.closePopup {
-  opacity: 0;
-  visibility: hidden;
-}
-.showPopup {
-  opacity: 1;
-  visibility: visible;
-}
 .popup {
-  // opacity: 0;
   width: 100vw;
   height: 100vh;
   z-index: 99999;
@@ -179,5 +170,16 @@ export default {
       }
     }
   }
+}
+
+@media screen and (max-width: 800px) {
+ #popup_container {
+   padding: 20px ;
+
+   h3 {
+     font-size: 24px ;
+     margin-bottom: 40px;
+   }
+ }
 }
 </style>

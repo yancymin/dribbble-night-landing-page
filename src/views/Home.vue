@@ -112,7 +112,7 @@
     </div>
     <div class="download">
       <div class="download-wrap">
-        <downloadBtn @click.native="showPopup()"/>
+        <downloadBtn @click.native="showPopup()" />
         <i></i>
       </div>
       <a
@@ -144,7 +144,7 @@
         <a href="https://yancymin.design" target="_blank">Yancy Min</a>
       </span>
     </footer>
-    <popup @showPopup="showPopup" :isShowPopup='isShowPopup'/>
+    <popup @showPopup="showPopup" :isShowPopup="isShowPopup" />
   </div>
 </template>
 
@@ -163,7 +163,6 @@ export default {
   methods: {
     showPopup() {
       this.isShowPopup = !this.isShowPopup;
-      console.log(this.isShowPopup)
     }
   }
 };
